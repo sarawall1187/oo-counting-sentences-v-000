@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    self.count {|string| string.split([:punct:]
+    self.count {|string| string.split(\A[:punct:]
 )}
   end
 end
