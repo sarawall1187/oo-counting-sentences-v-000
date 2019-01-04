@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    binding.pry
+  
     self.count {|string| string.split(".", "?", "!")}
   end
 end
