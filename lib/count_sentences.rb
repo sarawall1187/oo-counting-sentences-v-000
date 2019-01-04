@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.count {|string| string.split(".", "?", "!")}
+    self.count {|string| string.split("\\P{L}+)}
   end
 end
