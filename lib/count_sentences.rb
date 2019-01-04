@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.count {|string| string.split("[\\p{Punct}\\s]+")}
+    self.count {|string| string.split("[\\.,\\s!;?:\"]+")}
   end
 end
